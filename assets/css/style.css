@@ -80,12 +80,58 @@ body {
     background-color: #3794ff5e;
 }
 
+.about-section{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    max-height: 80vh;
+    height: 100%;
+
+    & > div {
+        max-width: 1100px;
+        margin-top: 150px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 50px;
+        background-color: #FFFFFF66;
+        position: relative;
+        max-height: 550px;
+        border-radius: 8px;
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 70px;
+            font-family:'Times New Roman', Times, serif;
+    }
+
+    p{
+        font-weight: 700;
+        color: #1E2223;
+        line-height: 27.29px;
+    }
+    
+    img{
+        position: relative;
+        top: 8px;
+        left: 130px;
+    }
+}
+
 /* BUTTONS & LINKS */
 
 a{
     color: #1E2223;
     text-decoration: none;
     font-weight: 700;
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        color: #120B59;
+        scale: .96;
+    }
 }
 
 .btn{
@@ -104,7 +150,7 @@ a{
     }
 
     &:active{
-        background-color: #85D5F7;
+        background-color: #ffffff9f;
         color: black;
     }
 }
