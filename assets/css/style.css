@@ -1,0 +1,115 @@
+*{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+}
+
+html, body{
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(90deg ,#85D5F7, #120B59);
+}
+
+.navigation{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #FFFFFF30;
+}
+
+.navigation > div {
+    max-width: 1205px;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+    & > ul{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        max-width: 600px;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    height: 100%;
+    max-height: 80vh;
+    
+    & > div {
+        max-width: 1100px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 50px;
+
+        h1 {
+            font-size: 70px;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        & > div:first-child{
+            flex: 1;
+        }
+
+        & > div:nth-child(2) {
+            & > div {
+                background: #c7c7c75d;
+                border-radius: 42px;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+.hero-bg{
+    background: url(../img/side-view-smiley-nurse-patient\ 1.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #3794ff5e;
+}
+
+/* BUTTONS & LINKS */
+
+a{
+    color: #1E2223;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn{
+    padding: 10px 15px;
+    min-width: 100px;
+    border: none;
+    outline: none;
+    background-color: #ffffff48;
+    border-radius: 4px;
+    transition: all .4s ease-in-out;
+    
+    &:hover{
+        transition: all .4s ease-in-out;
+        background: #000000bd;
+        color: white;
+    }
+
+    &:active{
+        background-color: #85D5F7;
+        color: black;
+    }
+}
+
+.btn-primary{
+    background-color: #120B59;
+    color: white;
+}
