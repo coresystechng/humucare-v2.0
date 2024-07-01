@@ -142,6 +142,7 @@ a{
     background-color: #ffffff48;
     border-radius: 4px;
     transition: all .4s ease-in-out;
+    cursor: pointer;
     
     &:hover{
         transition: all .4s ease-in-out;
