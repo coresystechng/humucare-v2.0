@@ -13,7 +13,7 @@
 <body class="linear-body">
     <div class="hero-bg">
         <nav class="navigation">
-            <div>
+            <div class="main-nav">
                 <img src="./assets/img/h-logo.png" width="150px" alt="">
                 <ul>
                     <a href="./pages/About.html">About</a>
@@ -23,6 +23,18 @@
                     <a href="./pages/Courses.html"><button class="btn btn-primary">Humu Courses</button></a>
                 </ul>
                 <a href="./Auth/Register.html"><button class="btn btn-secondary">Register</button></a>
+                <span class="open-nav" onclick="openNav()">&#9776;</span>
+            </div>
+            <div id="mobile-nav" class="mobile-nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <a href="./pages/Courses.html">Humu Courses</a>
+                    <a href="./pages/About.html">About</a>
+                    <a href="./pages/Contact.html">Contact</a>
+                    <a href="./pages/Consultation.html">Consultation</a>
+                    <a href="./pages/Services.html">Services</a>
+                    <a href="./pages/Register.html">Register</a>
+                </ul>
             </div>
         </nav>
         <section class="hero-section">
@@ -183,4 +195,18 @@
     </section>
     
 </body>
+<script>
+    function openNav() {
+      document.getElementById("mobile-nav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("mobile-nav").style.width = "0";
+      document.getElementById("mobile-nav").style.padding = "0";
+      document.getElementById("mobile-nav").style.right = "100px";
+    }
+    document.getElementById("mobile-nav").style.width = "0";
+    document.getElementById("mobile-nav").style.padding = "0";
+    document.getElementById("mobile-nav").style.right = "100px";
+    </script>
 </html>
