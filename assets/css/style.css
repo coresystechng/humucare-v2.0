@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 *{
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 600;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html, body{
@@ -89,7 +92,8 @@ html, body{
 
         h1 {
             font-size: 50px;
-            font-family:'Times New Roman', Times, serif;
+            color: #120B59;
+            /* font-weight: bold; */
         }
 
         & > div:first-child{
@@ -141,13 +145,14 @@ html, body{
 
     h1 {
         font-size: 50px;
-            font-family:'Times New Roman', Times, serif;
+        color: #120B59;
+        font-weight: bold;
     }
 
     p{
-        font-weight: 700;
+        /* font-weight: 700; */
         color: #1E2223;
-        line-height: 27.29px;
+        line-height: 2.5rem;
     }
     
     img{
@@ -226,12 +231,12 @@ html, body{
     h1 {
         font-size: 50px;
         color: white;
-            font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
     }
 
     p{
-        font-weight: 700;
-        line-height: 27.29px;
+        font-weight: 600;
+        /* line-height: 2.5rem; */
     }
     
     img{
@@ -256,7 +261,7 @@ a{
 }
 
 .btn{
-    padding: 10px 15px;
+    padding: 15px 15px;
     min-width: 100px;
     border: none;
     outline: none;
@@ -264,6 +269,7 @@ a{
     border-radius: 4px;
     transition: all .4s ease-in-out;
     cursor: pointer;
+    font-weight: 600;
     
     &:hover{
         transition: all .4s ease-in-out;
@@ -318,6 +324,7 @@ a{
 
 .text{
     display: flex;
+    flex: 8;
     flex-direction: column;
     line-height: 1.6;
 }
@@ -329,17 +336,22 @@ a{
 }
 .text p{
     margin-top: 0;
-    flex-basis: 2;
     font-size: 18px;
+    line-height: 2.5rem;
     color: #0d0d0d;
 }
 
+.temp-img1 {
+    flex-direction: column;
+    display: flex;
+    flex: 6;
 
+}
 .temp-img1 img{
     object-fit: cover;
-    width: 550px;
-    height: 350px;
-    border-radius: 10px;
+    /* width: 550px;
+    height: 350px; */
+    border-radius: 15px;
 }
 
 .training-courses{
@@ -358,22 +370,21 @@ a{
 }
 
 .sub2 h1{
-    margin-bottom: 0;
-    font-size: 60px;
-    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
     color: #120B59;
-    font-family: 'Times New Roman', Times, serif;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
+    font-weight: bold;
+
 }
 
 .sub2 p{
     font-size: 25px;
-    padding-top: 10px;
     margin-top: 0;
-    font-weight: 500;
+    line-height: 2.5rem;
     color: #120b59ca;
     padding-bottom: 20px;
-    margin-bottom: 40px;
 }
 
 .sub2main{
@@ -393,6 +404,7 @@ a{
 
 .main-text{
     display: flex;
+    flex: 8;
     flex-direction: column;
     margin-top: 20px;
 }
@@ -403,11 +415,11 @@ a{
     font-weight: bold;
     color: #010a2b;
     font-size: 22px;
-
+    
 }
 .main-text p{
     margin-top: 2px;
-    line-height: 1.3;
+    line-height: 2.5rem;
     color: #0b0736ef;
     font-weight: 500;
     margin-bottom: 20px;
@@ -416,7 +428,7 @@ a{
 }
 
 .main-text button{
-    margin-top: 120px;
+    /* margin-top: 120px; */
     margin-bottom: 20px;
     width: 170px;
     height: 41px;
@@ -435,13 +447,13 @@ a{
     scale: 1.02;
 }
 
-.sub2main-pic{
+.sub2main-pic {
+    /* display: flex; */
+    flex: 4;
+}
+.sub2main-pic > img {
     object-fit: cover;
-    height: 320px;
-    width: 420px;
-    border-radius: 12px;
-    margin-bottom: 80px;
-    margin-top: 10px;
+    border-radius: 15px;
 }
 
 .about-foot{
